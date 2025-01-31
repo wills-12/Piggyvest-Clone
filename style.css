@@ -6,6 +6,20 @@ body {
   height: 100vh;
 }
 
+/* Navbar */
+.navbar {
+  background: #f2f7f8;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 .btn-1 {
   border: 1px solid black;
 }
@@ -214,22 +228,6 @@ nav {
   color: white;
 }
 
-/*
-.card-blue {
-  background-color: #007bff;
-  color: #ffffff;
-}
-
-.card-blue .card-title,
-.card-blue .card-link {
-  color: #ffffff;
-}
-
-.card-blue img {
-  max-width: 100%;
-  border-radius: 10px;
-}*/
-
 .fade-in {
   animation: fadeIn 1s ease-in-out;
 }
@@ -310,6 +308,23 @@ nav {
     right: 10%;
     width: 55%;
   }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+  .hero {
+    padding: 2rem 0;
+  }
+  .testimonial-card {
+    margin: 1rem 0;
+  }
+  .investment-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .video-section {
+    padding: 1rem;
+  }
 
   .nav-items {
     display: flex;
@@ -349,8 +364,20 @@ nav {
   }
   .btn-3 {
     margin-top: 3em;
-  }
 
+  }
+  
+  .btn-4 {
+  width: 50%;
+
+  }
+  
+  .playstore {
+position: relative;
+bottom: 3em;
+left: 10.4em;
+  }
+  
   .title-1 {
     padding-left: 20px;
     font-size: 35px;
@@ -365,46 +392,77 @@ nav {
     font-size: 16px !important;
     width: 150vw;
   }
+  
+  
+  .floating-card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 
+  .hero {
+    padding: 2rem 0;
+  }
 
+  .testimonial-card {
+    margin: 1rem 0;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/*
-@media only screen and (min-width: 600px) {
-  .nav-items {
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;
-    padding-right: 180px;
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .hero {
+    padding: 2.5rem 0;
   }
 
-  .nav-item {
-    padding-bottom: 20px;
+  .testimonial-card {
+    margin: 1.5rem 0;
   }
-
-  .sign-in {
-    display: flex;
-    flex-direction: column;
+  
+  .investment-img {
+    max-width: 100%;
+    height: auto;
   }
-
-  .btn-1 {
-    position: relative;
-    right: 70%;
-    width: 20em;
-  }
-
-  .btn-2 {
-    position: relative;
-    top: 15px;
-    right: 70%;
-    width: 20em;
+  .video-section {
+    padding: 1.5rem;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .testimonial-card {
+    margin: 2rem 0;
+  }
   
+  .investment-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .video-section {
+    padding: 2rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .hero {
+    padding: 3.5rem 0;
+  }
+
+  .testimonial-card {
+    margin: 2.5rem 0;
+  }
+  
+  .investment-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .video-section {
+    padding: 2.5rem;
+  }
 }
 
 /* Login */
